@@ -1,0 +1,84 @@
+.filter-section {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.filter-toggle-button {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.filter-toggle-button:hover {
+  background-color: #333333;
+}
+
+.filter-reset-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.filter-reset-button:hover {
+  background-color: #333333;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    margin-top: 20px;
+  }
+
+  .filter-select {
+    font-size: 12px;
+  }
+}

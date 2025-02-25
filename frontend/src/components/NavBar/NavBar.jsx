@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NikeLogo from "../assets/nike-99.svg";
+import NikeLogo from "../../assets/nike-99.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img
             src={NikeLogo}
@@ -17,7 +16,6 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Botão de toggle para mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -30,7 +28,6 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Itens do menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">

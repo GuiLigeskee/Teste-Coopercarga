@@ -1,5 +1,6 @@
+import "./ProductCard.css";
 import React, { useState } from "react";
-import ProductModal from "./ProductModal";
+import ProductModal from "../ProductModal/ProductModal";
 
 const ProductCard = ({ product }) => {
   const [showModal, setShowModal] = useState(false);

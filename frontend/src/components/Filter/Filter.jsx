@@ -1,4 +1,5 @@
 import React from "react";
+import "./Filter.css";
 
 const Filter = ({
   filter,
@@ -10,17 +11,27 @@ const Filter = ({
   sportFilter,
   setSportFilter,
 }) => {
-  const categories = ["all", "Camiseta", "Regata", "Calção", "Acessório"];
-  const sizes = ["all", "P", "M", "G", "GG", "XPP", "39", "44"];
+  const categories = [
+    "all",
+    "Camiseta",
+    "Regata",
+    "Jaqueta",
+    "Calção",
+    "Acessório",
+    "Calçado",
+  ];
+  const sizes = ["all", "P", "M", "G", "GG", "XPP"];
   const priceRanges = [
     { label: "Todos", min: 0, max: Infinity },
-    { label: "Até R$ 100", min: 0, max: 100 },
-    { label: "R$ 100 - R$ 300", min: 100, max: 300 },
-    { label: "Acima de R$ 300", min: 300, max: Infinity },
+    { label: "Até R$:100,00", min: 0, max: 100 },
+    { label: "R$:100,00 - R$:200,00", min: 100, max: 200 },
+    { label: "R$:200,00 - R$:300,00", min: 200, max: 300 },
+    { label: "R$:300,00 - R$:400,00", min: 300, max: 400 },
+    { label: "R$:400,00 - R$:500,00", min: 400, max: 500 },
+    { label: "Acima de R$:500,00", min: 500, max: Infinity },
   ];
   const sports = ["all", "Futebol", "Basquete", "Corrida"];
 
-  // Função para resetar todos os filtros
   const resetFilters = () => {
     setFilter("all");
     setSizeFilter("all");
@@ -94,7 +105,6 @@ const Filter = ({
         </select>
       </div>
 
-      {/* Botão para resetar os filtros */}
       <button className="filter-reset-button" onClick={resetFilters}>
         Resetar Filtros
       </button>

@@ -1,14 +1,12 @@
-/* Estilos gerais para a página Home */
 .home-container {
   font-family: "Arial", sans-serif;
   color: #333;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #ffffff;
 }
 
-/* Hero Section */
 .hero-section {
-  background-color: #000000; /* Fundo preto */
-  color: #ffffff; /* Texto branco */
+  background-color: #000000;
+  color: #ffffff;
   padding: 150px 20px;
   text-align: center;
   position: relative;
@@ -22,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.1); /* Sobreposição sutil */
+  background: rgba(255, 255, 255, 0.1);
   z-index: 1;
 }
 
@@ -42,46 +40,45 @@
   font-size: 1.5rem;
   margin-bottom: 40px;
   animation: fadeInUp 1s ease-in-out;
-  color: #cccccc; /* Texto cinza claro */
+  color: #cccccc;
 }
 
 .hero-button {
-  background-color: #ffffff; /* Fundo branco */
-  color: #000000; /* Texto preto */
+  background-color: #ffffff;
+  color: #000000;
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
   animation: fadeIn 1.5s ease-in-out;
-  border: 2px solid #000000; /* Borda preta */
+  border: 2px solid #000000;
 }
 
 .hero-button:hover {
-  background-color: #000000; /* Fundo preto ao passar o mouse */
-  color: #ffffff; /* Texto branco ao passar o mouse */
+  background-color: #000000;
+  color: #ffffff;
   transform: scale(1.05);
 }
 
-/* Destaques */
 .highlights-section {
   display: flex;
   justify-content: space-around;
   padding: 80px 20px;
-  background-color: #f8f9fa; /* Fundo cinza claro */
-  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas pequenas */
+  background-color: #f8f9fa;
+  flex-wrap: wrap;
 }
 
 .highlight-card {
   text-align: center;
   max-width: 300px;
   padding: 30px;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px; /* Espaçamento entre os cards */
-  flex: 1 1 300px; /* Flexibilidade para ajustar o tamanho dos cards */
+  margin: 10px;
+  flex: 1 1 300px;
 }
 
 .highlight-card:hover {
@@ -92,24 +89,23 @@
 .highlight-icon {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #000000; /* Ícones pretos */
+  color: #000000;
 }
 
 .highlight-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #000000; /* Texto preto */
+  color: #000000;
 }
 
 .highlight-card p {
   font-size: 1rem;
-  color: #666666; /* Texto cinza */
+  color: #666666;
 }
 
-/* Chamada para Ação */
 .cta-section {
-  background-color: #000000; /* Fundo preto */
-  color: #ffffff; /* Texto branco */
+  background-color: #000000;
+  color: #ffffff;
   padding: 100px 20px;
   text-align: center;
 }
@@ -122,24 +118,23 @@
 }
 
 .cta-button {
-  background-color: #ffffff; /* Fundo branco */
-  color: #000000; /* Texto preto */
+  background-color: #ffffff;
+  color: #000000;
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
   animation: fadeInUp 1.5s ease-in-out;
-  border: 2px solid #000000; /* Borda preta */
+  border: 2px solid #000000;
 }
 
 .cta-button:hover {
-  background-color: #000000; /* Fundo preto ao passar o mouse */
-  color: #ffffff; /* Texto branco ao passar o mouse */
+  background-color: #000000;
+  color: #ffffff;
   transform: scale(1.05);
 }
 
-/* Animações */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -171,41 +166,40 @@
   }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.5rem; /* Título menor em telas menores */
+    font-size: 2.5rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem; /* Subtítulo menor em telas menores */
+    font-size: 1.2rem;
   }
 
   .highlights-section {
-    flex-direction: column; /* Cards em coluna em telas menores */
+    flex-direction: column;
     align-items: center;
   }
 
   .highlight-card {
-    max-width: 100%; /* Cards ocupam a largura total em telas menores */
-    margin: 10px 0; /* Espaçamento vertical entre os cards */
+    max-width: 100%;
+    margin: 10px 0;
   }
 
   .cta-section h2 {
-    font-size: 2rem; /* Título menor em telas menores */
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2rem; /* Título ainda menor em telas muito pequenas */
+    font-size: 2rem;
   }
 
   .hero-subtitle {
-    font-size: 1rem; /* Subtítulo ainda menor em telas muito pequenas */
+    font-size: 1rem;
   }
 
   .cta-section h2 {
-    font-size: 1.8rem; /* Título ainda menor em telas muito pequenas */
+    font-size: 1.8rem;
   }
 }

@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  color: #333;
+}

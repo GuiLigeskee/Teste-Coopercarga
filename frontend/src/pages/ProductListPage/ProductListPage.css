@@ -1,0 +1,29 @@
+.product-list-page {
+  padding: 20px;
+}
+
+.product-list-page .container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .product-list-page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-list-page .container {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list-page {
+    padding: 10px;
+  }
+
+  .product-list-page .container {
+    padding: 0 10px;
+  }
+}

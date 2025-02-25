@@ -1,6 +1,6 @@
 import React from "react";
+import "./Home.css";
 import { Link } from "react-router-dom";
-import "./Home.css"; // Arquivo de estilos específico para a Home
 
 const Home = () => {
   return (

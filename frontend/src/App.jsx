@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/NavBar/NavBar";
 import Home from "./pages/Home/Home";
-import ProductListPage from "./pages/ProductListPage";
+import ProductListPage from "./pages/ProductListPage/ProductListPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 

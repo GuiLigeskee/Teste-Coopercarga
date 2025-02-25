@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ProductCard from "./ProductCard";
-import Filter from "./Filter";
+import ProductCard from "../ProductCard/ProductCard";
+import Filter from "../Filter/Filter";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -31,7 +31,6 @@ const ProductList = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        {/* Botão para mostrar/ocultar filtros em dispositivos móveis */}
         <div className="col-12 d-lg-none text-center mb-3">
           <button
             className="btn btn-dark"
@@ -41,7 +40,6 @@ const ProductList = () => {
           </button>
         </div>
 
-        {/* Coluna dos Filtros (visível apenas em telas grandes ou quando showFilters é true) */}
         <div
           className={`col-lg-3 col-12 p-4 ${
             showFilters ? "d-block" : "d-none d-lg-block"
@@ -59,7 +57,6 @@ const ProductList = () => {
           />
         </div>
 
-        {/* Coluna dos Produtos */}
         <div className="col-lg-9 col-12 p-4">
           {filteredProducts.length > 0 ? (
             <div className="row">

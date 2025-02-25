@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal, Button } from "react-bootstrap";
+import "./ProductModal.css";
+import { Modal } from "react-bootstrap";
 
 const ProductModal = ({ show, onHide, product }) => {
   return (
