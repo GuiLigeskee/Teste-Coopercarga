@@ -1,5 +1,5 @@
-.navbar {
-  background-color: #fff;
+nav.navbar {
+  background-color: #fff !important; /* Fundo branco */
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -12,5 +12,9 @@
   font-weight: 500;
   margin: 0 10px;
   transition: color 0.3s ease;
-  color: #333;
+  color: #333; /* Cor do texto dos links */
+}
+
+.container-fluid {
+  background-color: transparent !important; /* Remove o fundo branco do container */
 }

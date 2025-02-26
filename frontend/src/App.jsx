@@ -1,9 +1,9 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/NavBar";
 import Home from "./pages/Home/Home";
 import ProductListPage from "./pages/ProductListPage/ProductListPage";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {

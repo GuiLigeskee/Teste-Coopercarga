@@ -4,10 +4,10 @@ import Filter from "../Filter/Filter";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const [filter, setFilter] = useState("all");
-  const [sizeFilter, setSizeFilter] = useState("all");
+  const [filter, setFilter] = useState("Todos");
+  const [sizeFilter, setSizeFilter] = useState("Todos");
   const [priceRange, setPriceRange] = useState({ min: 0, max: Infinity });
-  const [sportFilter, setSportFilter] = useState("all");
+  const [sportFilter, setSportFilter] = useState("Todos");
   const [showFilters, setShowFilters] = useState(false);
 
   useEffect(() => {
@@ -18,12 +18,13 @@ const ProductList = () => {
   }, []);
 
   const filteredProducts = products.filter((product) => {
-    const matchesCategory = filter === "all" || product.type === filter;
+    const matchesCategory = filter === "Todos" || product.type === filter;
     const matchesSize =
-      sizeFilter === "all" || product.available_sizes.includes(sizeFilter);
+      sizeFilter === "Todos" || product.available_sizes.includes(sizeFilter);
     const matchesPrice =
       product.price >= priceRange.min && product.price <= priceRange.max;
-    const matchesSport = sportFilter === "all" || product.sport === sportFilter;
+    const matchesSport =
+      sportFilter === "Todos" || product.sport === sportFilter;
 
     return matchesCategory && matchesSize && matchesPrice && matchesSport;
   });

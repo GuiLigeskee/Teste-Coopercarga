@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NikeLogo from "../../assets/nike-99.svg";
+import "./Navbar.css"; // Importe o CSS aqui
 
 const Navbar = () => {
   return (

@@ -12,7 +12,7 @@ const Filter = ({
   setSportFilter,
 }) => {
   const categories = [
-    "all",
+    "Todos",
     "Camiseta",
     "Regata",
     "Jaqueta",
@@ -20,23 +20,23 @@ const Filter = ({
     "Acessório",
     "Calçado",
   ];
-  const sizes = ["all", "P", "M", "G", "GG", "XPP"];
+  const sizes = ["Todos", "P", "M", "G", "GG", "XPP"];
   const priceRanges = [
     { label: "Todos", min: 0, max: Infinity },
-    { label: "Até R$:100,00", min: 0, max: 100 },
-    { label: "R$:100,00 - R$:200,00", min: 100, max: 200 },
-    { label: "R$:200,00 - R$:300,00", min: 200, max: 300 },
-    { label: "R$:300,00 - R$:400,00", min: 300, max: 400 },
-    { label: "R$:400,00 - R$:500,00", min: 400, max: 500 },
-    { label: "Acima de R$:500,00", min: 500, max: Infinity },
+    { label: "Até R$ 100,00", min: 0, max: 100 },
+    { label: "R$ 100,00 - R$ 200,00", min: 100, max: 200 },
+    { label: "R$ 200,00 - R$ 300,00", min: 200, max: 300 },
+    { label: "R$ 300,00 - R$ 400,00", min: 300, max: 400 },
+    { label: "R$ 400,00 - R$ 500,00", min: 400, max: 500 },
+    { label: "Acima de R$ 500,00", min: 500, max: Infinity },
   ];
-  const sports = ["all", "Futebol", "Basquete", "Corrida"];
+  const sports = ["Todos", "Futebol", "Basquete", "Corrida"];
 
   const resetFilters = () => {
-    setFilter("all");
-    setSizeFilter("all");
+    setFilter("Todos");
+    setSizeFilter("Todos");
     setPriceRange({ min: 0, max: Infinity });
-    setSportFilter("all");
+    setSportFilter("Todos");
   };
 
   return (
@@ -106,7 +106,7 @@ const Filter = ({
       </div>
 
       <button className="filter-reset-button" onClick={resetFilters}>
-        Resetar Filtros
+        Limpar Filtros
       </button>
     </div>
   );
