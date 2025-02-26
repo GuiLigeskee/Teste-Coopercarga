@@ -19,7 +19,7 @@ Siga os passos abaixo para configurar e rodar o projeto em sua máquina:
 Abra o terminal e execute o seguinte comando para clonar o repositório:
 
 ```bash
-git clone https://github.com/GuiLigeskee/Teste-Coopercarga.git
+https://github.com/GuiLigeskee/Teste-Coopercarga.git
 ```
 
 ### 2. Acesse a pasta do projeto
